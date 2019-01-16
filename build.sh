@@ -5,7 +5,7 @@ PARCEL=${1:-CDH_PYTHON-0.0.1.p0}
 PARCEL_NAME=${PARCEL%%-*}
 PARCEL_VERSION=${PARCEL#*-}
 CONDA_URI=${2:-https://repo.continuum.io/miniconda/Miniconda2-4.3.30-Linux-x86_64.sh}
-CDSW_ENGINE=${3:-docker.repository.cloudera.com/cdsw/engine:3}
+CDSW_ENGINE=${3:-docker.repository.cloudera.com/cdsw/engine:6}
 PARCEL_DIR=${4:-/opt/cloudera/parcels}
 
 CONDA_VERSION=$(echo $CONDA_URI | cut -d - -f 2)
